@@ -90,6 +90,7 @@ header .top-row .profile-picture img {
 
 header .bottom-row {
     display: flex;
+    align-items: center;
 }
 
 header .bottom-row .left {
@@ -122,6 +123,21 @@ header .bottom-row .greeting .hello{
 header .bottom-row .greeting .user {
     font-size: 30px;
     font-weight: bold;
+}
+
+header .bottom-row .right {
+    display: flex;
+    gap: 30px;
+}
+
+header .bottom-row .right button {
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 25px;
 }
 
 .main-sidebar {
