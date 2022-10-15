@@ -7,6 +7,10 @@ body {
     font-family: sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     display: grid;
     grid-template: 1fr 5fr / minmax(200px, 1fr) 5fr;
@@ -100,16 +104,33 @@ header .bottom-row .left {
     position: absolute;
     font-size: 24px;
     font-weight: bold;
-    top: 3%;
-    left: 5%;
+    top: 1.5%;
+    left: 2%;
     content: "Your Projects";
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
     padding: 20px 10px;
     border-left: 5px solid skyblue;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.6);
+}
+
+.project .project-buttons {
+    display: flex;
+    padding-top: 15px;
+    margin-top: auto;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.project .project-buttons button {
+    background: none;
+    border: none;
+    width: 25px;
+    height: 25px;
 }
 
 .right-sidebar {
