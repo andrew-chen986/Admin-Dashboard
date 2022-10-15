@@ -21,7 +21,8 @@ button {
 header {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    box-shadow: 0 5px 5px rgb(128, 128, 128, 0.5);
+    margin-bottom: 3px;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.5); 
 }
 
 header .top-row  {
@@ -87,6 +88,7 @@ header .bottom-row .left {
 .main-content {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    background-color: #f1f5f9;
     gap: 20px 20px;
 }
 
@@ -112,6 +114,7 @@ header .bottom-row .left {
 .project {
     display: flex;
     flex-direction: column;
+    background-color: white;
     padding: 20px 10px;
     border-left: 5px solid skyblue;
     border-radius: 5px;
@@ -135,5 +138,51 @@ header .bottom-row .left {
 
 .right-sidebar {
     display: grid;
+    font-size: 15px;
     grid-template-rows: 1fr 1fr;
+    padding: 50px 20px;
+    gap: 20px 20px;
+}
+
+.right-sidebar .announcements {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 15px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.6);
+}
+
+.right-sidebar .announcements .announcement-item {
+    text-overflow: ellipsis;
+}
+
+.right-sidebar .trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    gap: 15px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.6);
+}
+
+.right-sidebar .trending .trending-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-sidebar .trending .trending-item .profile .description {
+    font-size: 11px;
+}
+
+.trending-item .pfp img {
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    max-width: 50px;
 }
