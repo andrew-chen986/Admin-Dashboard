@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+}
